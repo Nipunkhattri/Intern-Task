@@ -40,7 +40,7 @@ app.get("/api/blog-stats", async (req, res) => {
     res
       .status(500)
       .json({
-        error: "An error occurred while fetching or processing blog data",
+        error: "An error occurred fetching the data",
       });
   }
 });
@@ -75,7 +75,7 @@ app.get("/api/blog-search", async (req, res) => {
     res
       .status(500)
       .json({
-        error: "An error occurred while fetching or processing blog data",
+        error: "An error occurred in query",
       });
   }
 });
